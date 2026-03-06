@@ -45,3 +45,4 @@ next-env.d.ts
 .trigger
 # clerk configuration (can include secrets)
 /.clerk/
+"public/uploads" 
