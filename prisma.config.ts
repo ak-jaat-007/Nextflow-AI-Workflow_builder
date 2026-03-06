@@ -1,9 +1,9 @@
 import { defineConfig } from "prisma/config";
-import "dotenv/config"; // Yeh zaroori hai env files load karne ke liye
+import "dotenv/config";
 
 export default defineConfig({
   schema: "./prisma/schema.prisma",
   datasource: {
-    url: process.env.DATABASE_URL, // Yeh aapki Neon link uthayega
+    url: process.env.DATABASE_URL!, // ✅ fixed
   },
 });
