@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+/* Uppy CSS - Manual Resolution */
+@import "../../node_modules/@uppy/core/dist/style.css";
+@import "../../node_modules/@uppy/dashboard/dist/style.css";
+
+:root {
+  --background: #020617;
+  --foreground: #ffffff;
+}
+
+/* ✅ Pulsating glow for running nodes */
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 8px rgba(168, 85, 247, 0.4); }
+  50%       { box-shadow: 0 0 24px rgba(168, 85, 247, 0.9), 0 0 40px rgba(168, 85, 247, 0.4); }
+}
+
+.node-running {
+  animation: pulse-glow 1.5s ease-in-out infinite;
+  border-color: rgba(168, 85, 247, 0.8) !important;
+}
